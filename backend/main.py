@@ -130,6 +130,13 @@ class AskResponse(BaseModel):
     evidences: list[dict[str, Any]]
 
 
+@app.get("/")
+def root():
+    return {
+        "ok": True,
+        "service": "DART RAG Agent API",
+        "endpoints": ["/health", "/disclosures/search", "/disclosures/load", "/ask", "/report"],
+    }
 
 
 @app.get("/health")
