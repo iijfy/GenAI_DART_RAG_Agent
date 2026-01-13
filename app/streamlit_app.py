@@ -3,7 +3,10 @@ from __future__ import annotations
 import requests
 import streamlit as st
 
-API_BASE = "http://127.0.0.1:8000"  # ✅ 로컬 백엔드 주소 (나중에 배포 주소로 교체)
+import os
+
+API_BASE = os.getenv("API_BASE", "http://127.0.0.1:8000")
+
 
 st.set_page_config(page_title="DART RAG Agent Demo (iM뱅크)", layout="wide")
 st.title("🏦 DART 공시 기반 RAG + Report Agent (Frontend)")
