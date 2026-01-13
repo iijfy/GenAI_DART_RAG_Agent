@@ -1,7 +1,7 @@
 ✅ [결과물 클릭](https://genaidartragagent-gtx8jmkptbizma9ypuq4dk.streamlit.app/)
 ![예시 이미지](example.png)
 
-# 🏦 DART 공시 기반 RAG + Report Agent (iM뱅크/KB금융 등)
+# 🏦 DART 공시 기반 RAG + Report Agent
 
 금융감독원 DART 공시(XML)를 **자동 수집 → 텍스트화 → 청킹/리트리벌 → 근거 기반 답변(RAG)** 까지 연결하고,  
 버튼 한 번으로 **4개 핵심 질문 리포트(Markdown/JSON)** 를 생성하는 **금융 문서형 GenAI 포트폴리오**입니다.
@@ -154,7 +154,7 @@ API_BASE = os.getenv("API_BASE", "http://127.0.0.1:8000")
 
 ---
 
-## 🧯 개발 과정에서 자주 만난 오류 & 해결
+## 🧯 개발 과정에서의 오류 & 해결
 
 1) Render에서 / 접속 시 404 → 서버가 꺼짐/재시작
     - 원인: Render 헬스체크가 GET /를 때리는데 라우트가 없으면 404
