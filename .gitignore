@@ -1,0 +1,17 @@
+# venv / env
+.venv/
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+
+# Data (용량 커질 수 있음)
+data/disclosures/
+data/reports/
+
+# Streamlit
+.streamlit/secrets.toml

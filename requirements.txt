@@ -1,0 +1,14 @@
+requests
+python-dotenv
+pandas
+lxml
+tqdm
+
+openai
+streamlit
+rank-bm25
+PyYAML
+
+uvicorn[standard]
+pydantic
+fastapi
